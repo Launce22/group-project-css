@@ -35,7 +35,7 @@ header nav{
 
 header .desktop-nav-links,
 header> a{
-  display: flex;
+  display: none;
   gap: 1rem;
   padding-right: 6rem;
 }
@@ -60,6 +60,53 @@ header> a{
 .mobile a{
   color: rgb(243, 198, 83);
   font-weight: 600;
+}
+
+.hero{
+  width: 100%;
+  min-height: calc(100vh - 4rem);
+  background-image: url("./images/william-bayreuther-C0KdBbibUYo-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.overlay{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  /* background-color: rgba(0, 0, 0, 0.2); */ 
+  z-index: 5;
+}
+button{
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  padding: 0.65rem 0.65rem;
+  display: flex;
+  justify-self: center;
+  margin-top: 1rem;
+}
+
+.hero h1{
+  color: #f6f6f6;
+  text-align: center;
+  font-size: 3.5rem;
+}
+.hero p{
+  color: #f6f6f6;
+  text-align: center;
+  font-size: 1rem;
 }
 
 
