@@ -1,0 +1,94 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul li{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+header{
+  width: 100%;
+  height: 4rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  background-color: rgb(5, 75, 51);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+
+}
+
+header nav{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+header .desktop-nav-links,
+header> a{
+  display: flex;
+  gap: 1rem;
+  padding-right: 6rem;
+}
+
+.mobile ul.mobile-dropdown{
+  position: absolute;
+  right: 0;
+  top: 100%;
+  background-color: rgb(5, 75, 51);
+  border-left: 1px solid rgba(0, 0, 0, 0.3);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+  width: 60%;
+  max-width: 12rem;
+  height: calc(100vh - 4rem);
+  padding: 2rem 1rem;
+  display: none;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.mobile a{
+  color: rgb(243, 198, 83);
+  font-weight: 600;
+}
+
+
+@media(min-width: 1000px){
+  .mobile{
+    display: none;
+  }
+
+  header nav > a {
+    display: block;
+    gap: 2rem;
+    
+  }
+
+  header.desktop-nav-links {
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  header .desktop-nav-links a {
+    color: #f6f6f6;
+    font-size: 0,9rem;
+    transition: 0.4s ease-in-out;
+  }
+
+  header .desktop-nav-links a:hover{
+    background-color: rgb(243, 198, 83);
+    padding: 9px;
+    border-radius: 6px;
+    color: rgb(5, 75, 51);
+  }
+}
