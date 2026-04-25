@@ -4,6 +4,15 @@
   box-sizing: border-box;
 }
 
+body{
+  font-family: 'Open sans' , 'Roboto' , 'Lato' ;
+
+}
+header{
+  font-family: 'Montserrat' , 'Poppins' ,'Raleway';
+
+}
+
 ul li{
   list-style: none;
 }
@@ -63,7 +72,77 @@ header> a{
 }
 
 
-@media(min-width: 1000px){
+.hero{
+  width:100%;
+  min-height: calc(100vh - 4rem);
+  background-image: url("./images/william-bayreuther-C0KdBbibUYo-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.overlay{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+
+.hero h1{
+  color: #f6f6f6;
+  z-index: 3;
+  text-align: center;
+  font-size: 2.5rem;
+
+}
+
+.hero > div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 3;
+}
+
+.hero p{
+  color: #f6f6f6;
+  z-index: 3;
+  text-align: center;
+  width: 90%;
+  max-width: 35rem;
+  font-size: 1.2rem;
+}
+button{
+  background-color: rgb(5, 75, 51);
+  color: #f6f6f6;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  padding: 0.8rem 1.35rem;
+  margin: 2rem;
+  transition: opacity 0.3s ease-in-out;
+}
+
+button:hover{
+  opacity: 0.9;
+}
+
+@media (min-width: 768px){
+  .hero p{
+    font-size: 1.3rem;
+  }
+  .hero{
+    min-height: 60vh;
+  }
+}
+
+
+@media(min-width: 1000px){ 
   .mobile{
     display: none;
   }
