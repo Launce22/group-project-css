@@ -132,6 +132,22 @@ button:hover{
   opacity: 0.9;
 }
 
+.feature{
+  margin: 4rem 0;
+  display: flex;
+  gap: 2rem;
+
+}
+
+.feature-content{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 4rem;
+}
+
+
+
 @media (min-width: 768px){
   .hero p{
     font-size: 1.3rem;
