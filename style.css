@@ -136,17 +136,74 @@ button:hover{
   margin: 4rem 0;
   display: flex;
   gap: 2rem;
+  width: 100%;
 
 }
 
-.feature-content{
+img{
+  width: 100%;
+  max-width: 400px;
+  object-fit: cover;
+  vertical-align: middle;
+  border-radius: 15px;
+}
+
+.wrapper{
+  padding: 0 15;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  gap: 5rem;
+}
+
+.intro{
+  flex: 1;
+  padding-left: 4rem;
+  
+}
+
+
+.intro h2:nth-child(1){
+  background-color: rgb(253, 236, 199);
+  display: inline-flex;
+  border-radius: 15px;
+  padding: 0.7rem 1rem;
+
+}
+.intro h2:nth-child(2){
+  margin: 1rem 0;
+  font-size: 2rem;
+  
+}
+
+.intro p{
+  width: 70%;
+  font-size: 17px;
+  margin-bottom: 1rem;
+}
+
+
+/* .feature-content{
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
   padding: 4rem;
+  overflow-wrap: break-word;
 }
 
+.feature-image{
+  display: flex;
+  flex-direction: column;
 
+  
+}
+
+.feature-content h2:nth-child(1){
+  background-color:  rgb(243, 198, 83);
+  color: rgb(5, 75, 51);
+  border-radius: 15px;
+} */
 
 @media (min-width: 768px){
   .hero p{
