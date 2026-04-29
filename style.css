@@ -4,14 +4,16 @@
   box-sizing: border-box;
 }
 
-body{
-  font-family: 'Open sans' , 'Roboto' , 'Lato' ;
 
-}
 header{
-  font-family: 'Montserrat' , 'Poppins' ,'Raleway';
-
+  font-family: 'Montserrat' , 'Poppins' ,'Raleway'; 
 }
+
+body{
+  font-family: 'Open sans' , 'Roboto', 'Lato' ;
+}
+
+
 
 ul li{
   list-style: none;
@@ -338,6 +340,53 @@ img{
   letter-spacing: 1px;
   opacity: 90%
   
+}
+
+.testimonials{
+  padding: 2.5rem 0;
+  background: #f1f1f1;
+  text-align: center;
+}
+
+.inner{
+  max-width: 75rem;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 1.25rem;
+}
+
+.border{
+  width: 180px;
+  height: 5px;
+  background:  rgb(5, 75, 51);
+  margin: 1.6rem auto;
+}
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.col{
+  flex: 33.33%;
+  max-width: 33.33%;
+  padding: 1rem;
+  box-sizing: border-box;
+  padding:15px;
+}
+
+.testimonial-2 img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.name{
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin: 1.25rem;
 }
 
 
