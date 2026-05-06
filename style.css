@@ -435,6 +435,11 @@ footer{
   text-align: center;
 }
 
+.btn-22{
+  color: red;
+  background-color: blue;
+}
+
 /* media queries */
 
 @media (min-width: 768px){
